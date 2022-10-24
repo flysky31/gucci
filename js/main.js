@@ -50,46 +50,28 @@ var swiper = new Swiper(".story_swiper", {
     autoplay: { 
         delay:3000, 
     }
-  });
+});
 
 
-
+//scroll down
   let offset = $('#header').offset().top - 0.8; 
   $('.scroll_box').click(function(){			
     //선택한 태그의 위치를 반환                
     $('html,body').animate({
       //scrollTop : offset.top
       scrollTop :offset
-    }, 1000);		
-    
+    }, 1000);	
   });	
 
 
-
+//메뉴 임시 준비중
   $("#header nav ul li a").on("click",function(){
     alert("준비중입니다")
   })
 
 
 
-  // $('#header nav ul').on('mouseenter mouseleave',function(aa){
-  //   if( $(window).width() > 1024){      //pc(데스크탑) 상태였을때만
-  //     if( aa.type == 'mouseenter') {  //마우스를 올려놨을때
-  //       $('.sub').stop().slideDown();
-  //       //$('.nav_shadow').stop().fadeIn();
-  //       $("#header").addClass("show");
-  //     } 
-  //     else {
-  //       $('.sub').stop().slideUp(200,function(){
-  //         $('.sub').removeAttr('style');
-  //         });
-  //         $("#header").removeClass("show");
-  //       //$('.nav_shadow').stop().fadeOut(200,function(){ 
-  //       //  $(this).removeAttr('style');
-  //       //});
-  //     }
-  //   }
-  // });
+
 
 
   
@@ -133,44 +115,24 @@ var swiper = new Swiper(".story_swiper", {
 
 
 
-  //video popup
-  /*
-  let embed_lyaer;
-
-  $(".video_img a").click(function(){
-    $("#popup").html(embed_lyaer);
-    $(".video_pop").addClass("on");
-    $("body").css("overflow","hidden");
-  });
-
-
-  $(".close_btn").click(function(){
-    embed_lyaer=$('#popup').html(); // popup id에 잇는 html을 embed_lyaer 글로벌 변수에 담아 놓음.
-
-	$('#popup').html(''); //popup id에 html 을 제거 
-    $(".video_pop").removeClass("on");
-    $("body").css("overflow","");
-  });
-*/
-
-  let embed = $('#player'); 
+//video popup
+let embed = $('#player'); 
   
-	$('.button').on('click', function(){ //레이어 열때
-		//var path = $(this).attr('href');    
-		$('.cont').append(embed);
-		$("#layer").show();
-		$('.dim').show();
-    $("body").css("overflow","hidden");
-	})
+$('.button').on('click', function(){ //레이어 열때
+	$('.cont').append(embed);
+	$("#layer").show();
+	$('.dim').show();
+    	$("body").css("overflow","hidden");
+})
   
-	$('.close').on('click', function(){ //레이어 닫을때
-		$(this).parents('#layer').hide();
-		$('.dim').hide();
-		$('.cont').empty();
-    $("body").css("overflow","");
-	})
+$('.close').on('click', function(){ //레이어 닫을때
+	$(this).parents('#layer').hide();
+	$('.dim').hide();
+	$('.cont').empty();
+  	$("body").css("overflow","");
+})
   
-  $('.dim').on('click', function(){
+$('.dim').on('click', function(){
     $(this).hide();
     $('#layer').hide();
     $('.cont').empty();
@@ -191,11 +153,11 @@ var swiper = new Swiper(".story_swiper", {
     
 
   
-    //마우스 커서
-    const border_next = document.querySelector(".swiper-next .cursor-border");
-    const border_prev = document.querySelector(".swiper-prev .cursor-border");
-    const fill = document.querySelector(".cursor-fill");
-    document.addEventListener("mousemove",function(event){
-      border_next.style.cssText = fill.style.cssText = "left: " + event.clientX + "px; top: " + event.clientY + "px;";
-      border_prev.style.cssText = fill.style.cssText = "left: " + event.clientX + "px; top: " + event.clientY + "px;";
-    });
+//마우스 커서
+const border_next = document.querySelector(".swiper-next .cursor-border");
+const border_prev = document.querySelector(".swiper-prev .cursor-border");
+const fill = document.querySelector(".cursor-fill");
+document.addEventListener("mousemove",function(event){
+   border_next.style.cssText = fill.style.cssText = "left: " + event.clientX + "px; top: " + event.clientY + "px;";
+   border_prev.style.cssText = fill.style.cssText = "left: " + event.clientX + "px; top: " + event.clientY + "px;";
+});
