@@ -231,14 +231,7 @@ img{
 
 
 
-/*
-.main_swiper .swiper-pagination-bullet-active em{
-   display: block;
-    width: 13px;
-    height: 2px;
-    background: #fff;
-    
-}*/
+
 
 
 .main_swiper .swiper-button-next.swiper-button-white, 
@@ -249,22 +242,7 @@ img{
 .main_swiper .swiper-container-rtl .swiper-button-next.swiper-button-white{
     background-image: none;
 }
-/*
-.main_swiper .swiper-button-next.swiper-button-white:after{
-    content:"NEXT";
-    display:none;
-    color: #fff;
-    font-size: 18px;
-}
 
-.main_swiper .swiper-button-prev.swiper-button-white:after{
-    content:"PREV";
-    display:none;
-    color: #fff;
-    font-size: 18px; 
-
-}
-*/
 
 .main_swiper .swiper-next .cursor-border,
 .main_swiper .swiper-prev .cursor-border {
@@ -313,20 +291,8 @@ img{
       transition: 0.12s;
       z-index: 1;
     }
-/*
-.main_swiper .swiper-button-next.swiper-button-white:hover.swiper_btn,
-.main_swiper .swiper-button-prev.swiper-button-white:hover.swiper_btn{
-    display: block;
-}
 
-.main_swiper .swiper-button-white .swiper_btn{
-    color: #fff;
-    font-size: 16px;
-    display: table-cell;
-    vertical-align: middle;
-    
-}
-*/
+
 .main_swiper .swiper-button-white:hover ~ .cursor-border {
     opacity: 1;
     transform: translate(-50%, -50%) ;
@@ -350,9 +316,6 @@ img{
 
 
 /* 메인 슬라이드 스크롤 다운 */
-
-
-
 .main_swiper .scroll_box{
     position: absolute;
     background: url("../img/arrow.png")no-repeat center / 35px 40px;
@@ -547,15 +510,8 @@ img{
     z-index: 100;
     background: #fff;
 }
-/*
-main .content01{
 
-    padding-top: 0;
-}
-main.on .content01 {
-    padding-top: 12%;
-}
-*/
+
 /* section01 */
 .content01{
     display: flex;
@@ -614,38 +570,12 @@ main.on .content01 {
     border-bottom: 0;
     border-right: 0;
 }
-/* .content01 a .hover::before{
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 12.5%;
-    right: 6%;
-    background: #fff;
-     margin-right: 50px; 
-    width: 35px;
-    height: 2px;
-}
 
-.content01 a .hover::after{
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 10.3%;
-    right: 6.3%;
-     background: #fff; 
-    width: 14px;
-    height: 15px;
-    border: 2px solid #fff;
-    transform: rotate(45deg);
-    border-left: 0;
-    border-bottom: 0;
-    border-right: 0;
-
-} */
 .content01 a:hover .hover{
     opacity: 1;
 
 }
+
 /* section02 */
 .sec02{
 
@@ -969,77 +899,6 @@ main.on .content01 {
 
 
 
-  /*
-.video_pop{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.7);
-    z-index: 50;
-    display: none;
-}
-.video_pop.on{
-    display: block;
-}
-.video_pop .pop_inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.video_pop .popcont{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-.video_pop iframe{
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    border: 10px solid #fff;
-    border-radius: 20px;
-
-}
-
-.video_pop .close_btn{
-    font-size: 0;
-    width: 30px;
-    height: 30px;
-    background:#000;
-    border: 2px solid #fff;
-    position: absolute;
-    top: -4%;
-    right: 23.5%;
-    border-radius: 50px;
-}
-.video_pop .close_btn::before{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 12px;
-    right: 0;
-    width: 20px;
-    height: 2px;
-    transform: rotate(45deg);
-    background: #fff;
-}
-
-
-.video_pop .close_btn::after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 12px;
-    right:  0;
-    width: 20px;
-    height: 2px;
-    transform: rotate(-45deg);
-    background: #fff;
-}*/
 #layer {
     display:none; 
     position:fixed; 
@@ -1105,6 +964,9 @@ main.on .content01 {
     -moz-opacity:0.4; 
     z-index:20;
 }
+
+
+
 /* footer */
 .footer{
     background: url("../img/footerbg.jpg")no-repeat center center / cover;
@@ -1381,19 +1243,8 @@ main.on .content01 {
         height: 100%;
         opacity: 1;
 
-    }/* 
-    nav{
-        display:table;
     }
-
-    #header .tablebox{
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        display:table-cell;
-    } */
+	
     #header nav:after{
         content: "";
         background: #000;
@@ -1593,6 +1444,8 @@ main.on .content01 {
 
 
 
+
+
 @media screen and (max-width:768px) {
     .pc_img{
         display: none!important;
@@ -1720,6 +1573,9 @@ main.on .content01 {
 
 
 
+
+
+
 @media screen and (max-width:640px) {
     .btn{
         font-size: 14px;
@@ -1813,6 +1669,10 @@ main.on .content01 {
 
 
 
+
+
+
+
 @media screen and (max-width:414px) {
 
     .content02 ol{
@@ -1860,6 +1720,9 @@ main.on .content01 {
     }
     
 }
+
+
+
 
 
 @media screen and (max-width:360px) {
